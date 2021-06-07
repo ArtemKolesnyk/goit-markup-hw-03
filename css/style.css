@@ -38,6 +38,9 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
+.section {
+  padding-bottom: 94px;
+}
 /* HEADER STYLES */
 .menu {
   display: flex;
@@ -64,10 +67,8 @@ img {
 .link a:active {
   color: var(--color-blue);
 }
+.nav-link-item:not(:last-child),
 .nav-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-.nav-link-item:not(:last-child) {
   margin-right: 50px;
 }
 .logo {
@@ -86,24 +87,7 @@ img {
 /* MAIN STYLE*/
 
 /* HERO*/
-.container-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--gray-color);
-  color: var(--color-white);
-  width: 1200px;
-}
-.title-hero {
-  Font family: Roboto;
-  Font style: Black;;
-  Font size: 44px;
-  Line height: 116%;
-  Align: Center;
-  align: Top;
-  Letter spacing: 6%;
-}
-button {
+.hero-button {
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -112,9 +96,9 @@ button {
   width: 250px;
   height: 50px;
 }
-button:hover,
-button:focus,
-button:active {
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
   background-color: #188CE8;
   color: var(--color-white);
 }
@@ -122,12 +106,12 @@ button:active {
 /*LIST-BUTTON*/
 .list-button {
   display: flex;
+  justify-content: center;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  border: none;
   background-color: #F5F4FA;
   color: var(--main-text-color);
-  width: 128px;
 }
 .list-button button:hover,
 .list-button button:focus,
@@ -162,7 +146,6 @@ button:active {
 /* FOOTER*/
 .footer {
   background-color: var(--gray-color);
-  width: 1200px;
 }
 span.logo-white {
   color: var(--color-white);
