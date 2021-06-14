@@ -107,6 +107,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 106px 0px;
 }
 .title-hero {
   font-family: var(--main-font);
