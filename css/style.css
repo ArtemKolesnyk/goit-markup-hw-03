@@ -36,6 +36,7 @@ img {
 }
 .container,
 .container-hero {
+  border: red solid;
   width: 1200px;
   margin: 0 auto;
 }
@@ -69,6 +70,7 @@ button {
   align-items: center;
   height: 16px;
   margin: 32px 0px;
+  margin-left: 93px;
 }
 .nav-list a:hover,
 .nav-list a:focus,
@@ -123,7 +125,7 @@ button {
   cursor: pointer;
   background-color: var(--color-blue);
   color: var(--color-white);
-  width: 250px;
+  width: 200px;
   height: 50px;
 }
 .hero-button:hover,
@@ -133,22 +135,32 @@ button {
   color: var(--color-white);
 }
 /* HERO*/
-/*LIST-BUTTON*/
-.list-button {
+/*FILTERS-BUTTON*/
+.filters {
   display: flex;
   justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #F5F4FA;
-  color: var(--main-text-color);
+  margin-bottom: 50px;
 }
-.list-button button:hover,
-.list-button button:focus,
-.list-button button:active {
+.filter-button {
+  padding: 6px 22px;
+  background-color:#F5F4FA;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.filter-button.active {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
-/*LIST-BUTTON*/
+/*FILTERS-BUTTON*/
 .specifics,
 .business {
   display: flex;
@@ -160,7 +172,7 @@ button {
 }
 .specifics-title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -187,11 +199,6 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.card-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -205,6 +212,7 @@ button {
   letter-spacing: 0.03em;
   margin: 30px 0px 10px 0px;
 }
+
 .profession {
   font-weight: normal;
   font-size: 16px;
@@ -217,10 +225,38 @@ button {
 .team-section {
   background-color:  #F5F4FA;;
 }
+.card-portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+.card-info {
+  margin: 20px 24px;
+} 
+.card-portfolio {
+  border: 1px #EEE solid;
+  margin-bottom: 30px;
+}
+.card-portfolio-title {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+}
+.card-portfolio-text{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+}
 /* MAIN STYLE*/
 /* FOOTER*/
 .footer {
   background-color: var(--gray-color);
+  padding: 60px 0px 60px 0px;
 }
 span.logo-white {
   color: var(--color-white);
